@@ -4,7 +4,7 @@
 - [Awesome Flask](#awesome-flask)
   - [框架](#framework)
   - [后台管理](#admin-interface)
-  - [分析统计](#analytics)
+  - [数据分析](#analytics)
   - [认证](#authentication)
   - [授权](#authorization)
   - [数据库](#database)
@@ -18,7 +18,7 @@
   - [限流](#rate-limiting)
   - [任务队列](#task-queue)
   - [异常追踪](#exception-tracking)
-  - [跟踪](#tracing)
+  - [链路追踪](#tracing)
   - [APM](#apm)
   - [其他  SDK](#other-sdk)
   - [前端](#frontend)
@@ -44,208 +44,188 @@
 - [Flask-Potion](https://github.com/biosustain/potion) - 基于 Flask 和 SQLAlchemy 的 RESTful API 框架
 - [Zappa](https://github.com/Miserlou/Zappa) - 在 AWS Lambda 和 API Gateway 上构建和部署无服务器 Flask 应用
 
-## Admin interface
+# 管理后台
 
-- [Flask-Admin](https://github.com/flask-admin/flask-admin) - Simple and extensible administrative interface framework for Flask
+- [Flask-Admin](https://github.com/flask-admin/flask-admin) - 简单且可扩展的 Flask 管理后台框架
 
-## Analytics
+## 数据分析
 
-- [Flask-Analytics](https://github.com/citruspi/Flask-Analytics) - Analytics snippets generator extension for the Flask framework
-- [Flask-Matomo](https://github.com/Lanseuo/flask-matomo) - Track requests to your Flask website with Matomo
+- [Flask-Analytics](https://github.com/citruspi/Flask-Analytics) - 为 Flask 框架生成分析脚本片段的扩展  
+- [Flask-Matomo](https://github.com/Lanseuo/flask-matomo) - 使用 Matomo 跟踪对 Flask 网站的请求
 
-## Authentication
+## 认证
 
-- [Flask-Security](https://github.com/mattupstate/flask-security) - Quick and simple security for Flask applications
-- [Flask-Login](https://github.com/maxcountryman/flask-login) - Flask user session management
-- [Flask-User](https://github.com/lingthio/Flask-User) - Customizable user account management for Flask
-- [Flask-HTTPAuth](https://github.com/miguelgrinberg/Flask-HTTPAuth) - Simple extension that provides Basic and Digest HTTP authentication for Flask routes
-- [Flask-Praetorian](https://github.com/dusktreader/flask-praetorian) - Strong, Simple, and Precise security for Flask APIs (using jwt)
+- [Flask-Security](https://github.com/mattupstate/flask-security) - 为 Flask 应用提供快速简便的安全机制  
+- [Flask-Login](https://github.com/maxcountryman/flask-login) - Flask 用户会话管理  
+- [Flask-User](https://github.com/lingthio/Flask-User) - 可定制的 Flask 用户账户管理  
+- [Flask-HTTPAuth](https://github.com/miguelgrinberg/Flask-HTTPAuth) - 为 Flask 路由提供 Basic 和 Digest HTTP 认证的简单扩展  
+- [Flask-Praetorian](https://github.com/dusktreader/flask-praetorian) - 为 Flask API 提供强大、简单、精确的安全机制（基于 JWT）
 
-## Authorization
+## 授权
 
-- [Authlib](https://github.com/lepture/authlib) - Authlib is an ambitious authentication library for OAuth 1, OAuth 2, OpenID clients, servers and more.
-- [Authomatic](https://github.com/authomatic/authomatic) - Authomatic provides out of the box support for a number of providers using OAuth 1.0a (Twitter, Tumblr and more) and OAuth 2.0 (Facebook, Foursquare, GitHub, Google, LinkedIn, PayPal and more)
-- [Flask-Pundit](https://github.com/anurag90x/flask-pundit) - Extension based on Rails' [Pundit](https://github.com/varvet/pundit) gem that provides easy way to organize access control for your models
-- [Flask-Dance](https://github.com/singingwolfboy/flask-dance) - OAuth consumer extension for Flask, shipped with pre-set support for Facebook, GitHub, Google, etc.
+- [Authlib](https://github.com/lepture/authlib) - 功能强大的 OAuth 1、OAuth 2、OpenID 客户端和服务器认证库  
+- [Authomatic](https://github.com/authomatic/authomatic) - 提供开箱即用的 OAuth 1.0a（Twitter、Tumblr 等）和 OAuth 2.0（Facebook、GitHub、Google 等）支持  
+- [Flask-Pundit](https://github.com/anurag90x/flask-pundit) - 基于 Rails 的 [Pundit](https://github.com/varvet/pundit) 扩展，为模型访问控制提供简便方式  
+- [Flask-Dance](https://github.com/singingwolfboy/flask-dance) - Flask OAuth 客户端扩展，预设支持 Facebook、GitHub、Google 等
 
-## Database
+## 数据库
 
-- [Flask-MongoEngine](https://github.com/MongoEngine/flask-mongoengine) - MongoEngine flask extension with WTF model forms support
-- [Flask-SQLAlchemy](https://github.com/mitsuhiko/flask-sqlalchemy) - Adds SQLAlchemy support to Flask
+- [Flask-MongoEngine](https://github.com/MongoEngine/flask-mongoengine) - 支持 WTF 表单的 MongoEngine Flask 扩展  
+- [Flask-SQLAlchemy](https://github.com/mitsuhiko/flask-sqlalchemy) - 为 Flask 添加 SQLAlchemy 支持
 
-## Database Migrations
+## 数据库迁移
 
-- [Flask-Migrate](https://github.com/miguelgrinberg/Flask-Migrate) - SQLAlchemy database migrations for Flask applications using Alembic
+- [Flask-Migrate](https://github.com/miguelgrinberg/Flask-Migrate) - 使用 Alembic 的 Flask SQLAlchemy 数据库迁移工具
 
-## Session
+## 会话
 
-- [Flask-Session](https://github.com/fengsp/flask-session) - Server side session extension for Flask
+- [Flask-Session](https://github.com/fengsp/flask-session) - Flask 服务器端会话扩展
 
-## Cache
+## 缓存
 
-- [Flask-Caching](https://github.com/sh4nks/flask-caching) - Adds easy cache support to Flask
-- [flask-heroku-cacheify](https://github.com/rdegges/flask-heroku-cacheify) - Automatic Flask cache configuration on Heroku
+- [Flask-Caching](https://github.com/sh4nks/flask-caching) - 为 Flask 添加简单的缓存支持  
+- [flask-heroku-cacheify](https://github.com/rdegges/flask-heroku-cacheify) - 在 Heroku 上自动配置 Flask 缓存
 
-## Data Validation
+## 数据验证
 
-- [Flask-WTF](https://github.com/lepture/flask-wtf) - Simple integration of Flask and WTForms, including CSRF, file upload and Recaptcha integration.
+- [Flask-WTF](https://github.com/lepture/flask-wtf) - Flask 与 WTForms 的简单集成，支持 CSRF、防止文件上传攻击及 Recaptcha
 
-## Email
+## 邮件
 
-- [Flask-Mail](https://github.com/mattupstate/flask-mail/) - Flask-Mail adds SMTP mail sending to your Flask applications
+- [Flask-Mail](https://github.com/mattupstate/flask-mail/) - 为 Flask 应用添加 SMTP 邮件发送功能
 
-## i18n
+## 国际化 (i18n)
 
-- [flask-babel](https://github.com/python-babel/flask-babel) - i18n and l10n support for Flask based on Babel and pytz
+- [flask-babel](https://github.com/python-babel/flask-babel) - 基于 Babel 和 pytz 的 Flask 国际化和本地化支持
 
-## Full-text searching
+## 全文搜索
 
-- [SQLAlchemy-Searchable](https://github.com/kvesteri/sqlalchemy-searchable) - Full-text searching for Flask-SQLAlchemy (Postgres only)
-- [flask_msearch](https://github.com/honmaple/flask-msearch) - Full text search for flask with whoosh
+- [SQLAlchemy-Searchable](https://github.com/kvesteri/sqlalchemy-searchable) - Flask-SQLAlchemy 的全文搜索（仅支持 Postgres）  
+- [flask_msearch](https://github.com/honmaple/flask-msearch) - Flask 的全文搜索，基于 Whoosh
 
-## Rate Limiting
+## 限流
 
-- [Flask-Limiter](https://github.com/alisaifee/flask-limiter) - Flask-Limiter provides rate limiting features to flask routes
+- [Flask-Limiter](https://github.com/alisaifee/flask-limiter) - 为 Flask 路由提供速率限制功能
 
-## Task Queue
+## 任务队列
 
-- [Flask-Dramatiq](https://flask-dramatiq.rtfd.io/) - [dramatiq](https://github.com/Bogdanp/dramatiq) integration for Flask applications.
-- [huey](https://github.com/coleifer/huey) - a little task queue for python
-- [Flask-RQ](https://github.com/mattupstate/flask-rq) - RQ (Redis Queue) integration for Flask applications
-- [celery](https://github.com/celery/celery/) - Distributed Task Queue
+- [Flask-Dramatiq](https://flask-dramatiq.rtfd.io/) - Flask 的 Dramatiq 集成  
+- [huey](https://github.com/coleifer/huey) - Python 轻量级任务队列  
+- [Flask-RQ](https://github.com/mattupstate/flask-rq) - Flask 的 RQ (Redis Queue) 集成  
+- [celery](https://github.com/celery/celery/) - 分布式任务队列
 
-## Exception tracking
+## 异常追踪
 
-- [sentry-sdk](https://github.com/getsentry/sentry-python) - Python client for [Sentry](https://sentry.io/welcome/).
-- [airbrake-python](https://github.com/airbrake/airbrake-python) - Python client for [Airbrake](https://airbrake.io/)
+- [sentry-sdk](https://github.com/getsentry/sentry-python) - Python 客户端，用于 [Sentry](https://sentry.io/welcome/)  
+- [airbrake-python](https://github.com/airbrake/airbrake-python) - Python 客户端，用于 [Airbrake](https://airbrake.io/)
 
-## Tracing
+## 链路追踪
 
-- [flask-zipkin](https://github.com/qiajigou/flask-zipkin) - Distributed tracing with [Zipkin](https://zipkin.io/).
-- [Flask-OpenTracing](https://github.com/opentracing-contrib/python-flask) - Distributed tracing with [OpenTracing](http://opentracing.io/).
+- [flask-zipkin](https://github.com/qiajigou/flask-zipkin) - 基于 [Zipkin](https://zipkin.io/) 的分布式追踪  
+- [Flask-OpenTracing](https://github.com/opentracing-contrib/python-flask) - 基于 [OpenTracing](http://opentracing.io/) 的分布式追踪
 
 ## APM
 
-- [elastic-apm](https://github.com/elastic/apm-agent-python) - Elastic APM agent for Python
+- [elastic-apm](https://github.com/elastic/apm-agent-python) - Elastic APM Python Agent
 
-## Other SDK
+## 其他 SDK
 
-- [Flask-GoogleMaps](https://github.com/rochacbruno/Flask-GoogleMaps) - Build and embed google maps in our Flask templates
-- [Flask-Gravatar](https://github.com/zzzsochi/Flask-Gravatar) - Small and simple gravatar usage in Flask
-- [Flask-Pusher](https://github.com/iurisilvio/Flask-Pusher) - Pusher integration for Flask
-- [Flask-Azure-Storage](https://github.com/alejoar/Flask-Azure-Storage) - Flask extension that provides integration with Azure Storage
+- [Flask-GoogleMaps](https://github.com/rochacbruno/Flask-GoogleMaps) - 在 Flask 模板中构建和嵌入 Google Maps  
+- [Flask-Gravatar](https://github.com/zzzsochi/Flask-Gravatar) - 在 Flask 中使用 Gravatar  
+- [Flask-Pusher](https://github.com/iurisilvio/Flask-Pusher) - Flask 的 Pusher 集成  
+- [Flask-Azure-Storage](https://github.com/alejoar/Flask-Azure-Storage) - Flask 与 Azure Storage 集成的扩展
 
-## Frontend
+## 前端
 
-- [Flask-CORS](https://github.com/corydolphin/flask-cors) - A Flask extension for handling Cross Origin Resource Sharing (CORS), making cross-origin AJAX possible
-- [flask-assets](https://github.com/miracle2k/flask-assets) - Flask webassets integration
-- [flask-s3](https://github.com/e-dard/flask-s3) - Seamlessly serve your static assets of your Flask app from Amazon S3
-- [Flask-SSLify](https://github.com/kennethreitz/flask-sslify) - Force SSL on your Flask app
-- [Flask-HTMLmin](https://github.com/hamidfzm/Flask-HTMLmin) - Flask html minifier
+- [Flask-CORS](https://github.com/corydolphin/flask-cors) - 处理跨域资源共享（CORS），支持跨域 AJAX  
+- [flask-assets](https://github.com/miracle2k/flask-assets) - Flask Webassets 集成  
+- [flask-s3](https://github.com/e-dard/flask-s3) - 从 Amazon S3 无缝提供 Flask 静态资源  
+- [Flask-SSLify](https://github.com/kennethreitz/flask-sslify) - 强制 Flask 应用使用 SSL  
+- [Flask-HTMLmin](https://github.com/hamidfzm/Flask-HTMLmin) - Flask HTML 压缩器
 
-## Development (Debugging/Testing/Documentation)
+## 开发（调试/测试/文档）
 
-- [Flasgger](https://github.com/rochacbruno/flasgger) - Create API documentation for Flask views using Swagger 2.0 specs
-- [flask-apispec](https://github.com/jmcarp/flask-apispec) - simple self-documenting APIs with flask
-- [flask2postman](https://github.com/numberly/flask2postman) - Generate a Postman collection from your Flask application
-- [flask_profiler](https://github.com/muatik/flask-profiler) - endpoint analyzer/profiler for Flask
-- [Flask-DebugToolbar](https://github.com/mgood/flask-debugtoolbar) - A port of the django debug toolbar to flask
-- [flask-debug-toolbar-mongo](https://github.com/cenkalti/flask-debug-toolbar-mongo) - MongoDB panel for the Flask Debug Toolbar
-- [Flask-Testing](https://github.com/jarus/flask-testing) - Unittest extensions for Flask
-- [pytest-flask](https://github.com/pytest-dev/pytest-flask) - A set of pytest fixtures to test Flask applications
-- [Flask-MonitoringDashboard](https://github.com/flask-dashboard/Flask-MonitoringDashboard) - Automatically monitor the evolving performance of Flask/Python web services.
-- [nplusone](https://github.com/jmcarp/nplusone#flask-sqlalchemy) - Auto-detect n+1 queries with Flask and SQLAlchemy
-- [connexion](https://github.com/zalando/connexion) - Swagger/OpenAPI First framework for Python on top of Flask with automatic endpoint validation & OAuth2 support.
+- [Flasgger](https://github.com/rochacbruno/flasgger) - 使用 Swagger 2.0 为 Flask 视图创建 API 文档  
+- [flask-apispec](https://github.com/jmcarp/flask-apispec) - Flask 自文档 API  
+- [flask2postman](https://github.com/numberly/flask2postman) - 从 Flask 应用生成 Postman 集合  
+- [flask_profiler](https://github.com/muatik/flask-profiler) - Flask 路由分析器/性能分析  
+- [Flask-DebugToolbar](https://github.com/mgood/flask-debugtoolbar) - Django 调试工具栏移植到 Flask  
+- [flask-debug-toolbar-mongo](https://github.com/cenkalti/flask-debug-toolbar-mongo) - Flask Debug Toolbar 的 MongoDB 面板  
+- [Flask-Testing](https://github.com/jarus/flask-testing) - Flask 单元测试扩展  
+- [pytest-flask](https://github.com/pytest-dev/pytest-flask) - 用于测试 Flask 应用的 pytest fixture  
+- [Flask-MonitoringDashboard](https://github.com/flask-dashboard/Flask-MonitoringDashboard) - 自动监控 Flask/Python Web 服务性能  
+- [nplusone](https://github.com/jmcarp/nplusone#flask-sqlalchemy) - 自动检测 Flask+SQLAlchemy 的 N+1 查询  
+- [connexion](https://github.com/zalando/connexion) - 基于 Flask 的 Swagger/OpenAPI 优先框架，支持自动端点验证和 OAuth2
 
-## Utils
+## 工具类 (Utils)
 
-- [flask-marshmallow](https://github.com/marshmallow-code/flask-marshmallow) Flask + marshmallow for beautiful APIs
-- [flask-jsonrpc](https://github.com/cenobites/flask-jsonrpc) - A basic JSON-RPC implementation for your Flask-powered sites
-- [Flask-Bcrypt](https://github.com/maxcountryman/flask-bcrypt) - Flask-Bcrypt is a Flask extension that provides bcrypt hashing utilities for your application
-- [Mixer](https://github.com/klen/mixer) - Mixer is application to generate instances of Django or SQLAlchemy models
-- [Flask-FeatureFlags](https://github.com/trustrachel/Flask-FeatureFlags) - A Flask extension that enables or disables features based on configuration
-- [Flask-Reggie](https://github.com/rhyselsmore/flask-reggie) - Regex Converter for Flask URL Routes
-- [Flask-SocketIO](https://github.com/miguelgrinberg/Flask-SocketIO) - Socket.IO integration for Flask applications
-- [Flask-Moment](https://github.com/miguelgrinberg/Flask-Moment) - Formatting of dates and times in Flask templates using moment.js
-- [Flask-Paginate](https://github.com/lixxu/flask-paginate) - Pagination support for Flask
-- [Flask-graphql](https://github.com/graphql-python/flask-graphql) - Adds GraphQL support to your Flask application
+- [flask-marshmallow](https://github.com/marshmallow-code/flask-marshmallow) - Flask + Marshmallow 美化 API  
+- [flask-jsonrpc](https://github.com/cenobites/flask-jsonrpc) - Flask JSON-RPC 基础实现  
+- [Flask-Bcrypt](https://github.com/maxcountryman/flask-bcrypt) - Flask bcrypt 哈希工具  
+- [Mixer](https://github.com/klen/mixer) - 生成 Django 或 SQLAlchemy 模型实例  
+- [Flask-FeatureFlags](https://github.com/trustrachel/Flask-FeatureFlags) - 根据配置启用或禁用功能  
+- [Flask-Reggie](https://github.com/rhyselsmore/flask-reggie) - Flask URL 路由的正则转换器  
+- [Flask-SocketIO](https://github.com/miguelgrinberg/Flask-SocketIO) - Flask Socket.IO 集成  
+- [Flask-Moment](https://github.com/miguelgrinberg/Flask-Moment) - Flask 模板中的日期时间格式化（使用 moment.js）  
+- [Flask-Paginate](https://github.com/lixxu/flask-paginate) - Flask 分页支持  
+- [Flask-graphql](https://github.com/graphql-python/flask-graphql) - 为 Flask 应用添加 GraphQL 支持
 
-# Resources
-## Tutorials
+# 资源
+## 教程
 
-- [How to build a news app that never goes down and costs you practically nothing](http://blog.apps.npr.org/2013/02/14/app-template-redux.html) (by NPR)
-- [Building websites in Python with Flask](http://maximebf.com/blog/2012/10/building-websites-in-python-with-flask/)
-- [The Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
-- [Implementing a RESTful Web API with Python & Flask](http://blog.luisrei.com/articles/flaskrest.html)
-- [Discover Flask - Full Stack Web Development with Flask](https://github.com/realpython/discover-flask)
-- [Flaskr - Intro to Flask, Test Driven Development, and jQuery](https://github.com/mjhea0/flaskr-tdd)
+- [如何构建一个几乎不花钱且永不宕机的新闻应用](http://blog.apps.npr.org/2013/02/14/app-template-redux.html) (NPR)  
+- [使用 Flask 构建 Python 网站](http://maximebf.com/blog/2012/10/building-websites-in-python-with-flask/)  
+- [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)  
+- [使用 Python & Flask 实现 RESTful Web API](http://blog.luisrei.com/articles/flaskrest.html)  
+- [Discover Flask - 全栈开发](https://github.com/realpython/discover-flask)  
+- [Flaskr - Flask 入门、TDD 和 jQuery](https://github.com/mjhea0/flaskr-tdd)
 
-## Courses
+## 课程
 
-- [Full Stack Foundations](https://www.udacity.com/course/full-stack-foundations--ud088)
+- [Full Stack Foundations](https://www.udacity.com/course/full-stack-foundations--ud088)  
 - [Designing RESTful APIs](https://www.udacity.com/course/designing-restful-apis--ud388)
 
-## Books
+## 书籍
 
-- [Explore Flask](https://exploreflask.com/en/latest/)
-- [Flask Web Development](http://shop.oreilly.com/product/0636920031116.do)
-- [Real Python](https://realpython.com)
-- [Learning Flask Framework](https://www.packtpub.com/web-development/learning-flask-framework)
-- [Flask Blueprints](https://www.packtpub.com/web-development/flask-blueprints)
-- [Flask Framework Cookbook](https://www.packtpub.com/web-development/flask-framework-cookbook)
-- [Mastering Flask](https://www.packtpub.com/web-development/mastering-flask)
+- [Explore Flask](https://exploreflask.com/en/latest/)  
+- [Flask Web Development](http://shop.oreilly.com/product/0636920031116.do)  
+- [Real Python](https://realpython.com)  
+- [Learning Flask Framework](https://www.packtpub.com/web-development/learning-flask-framework)  
+- [Flask Blueprints](https://www.packtpub.com/web-development/flask-blueprints)  
+- [Flask Framework Cookbook](https://www.packtpub.com/web-development/flask-framework-cookbook)  
+- [Mastering Flask](https://www.packtpub.com/web-development/mastering-flask)  
 - [Building Web Applications with Flask](https://www.packtpub.com/web-development/building-web-applications-flask)
 
-## Slides
+## 幻灯片
 
-- [Creating beautiful REST APIs with Flask](http://pycoder.net/bospy/presentation.html)
-- [Advanced Flask Patterns](https://speakerdeck.com/mitsuhiko/advanced-flask-patterns)
-- [Flasky Goodness](https://speakerdeck.com/kennethreitz/flasky-goodness)
-- [Domain Driven Design (... with Flask)](https://speakerdeck.com/mikedebo/domain-driven-design-dot-dot-dot-with-flask)
+- [用 Flask 创建漂亮的 REST API](http://pycoder.net/bospy/presentation.html)  
+- [高级 Flask 模式](https://speakerdeck.com/mitsuhiko/advanced-flask-patterns)  
+- [Flasky Goodness](https://speakerdeck.com/kennethreitz/flasky-goodness)  
+- [领域驱动设计（Flask 实践）](https://speakerdeck.com/mikedebo/domain-driven-design-dot-dot-dot-with-flask)  
 - [In Flask we Trust](https://speakerdeck.com/playpauseandstop/in-flask-we-trust)
 
-## Videos
+## 视频
 
-- [PyVideo](https://pyvideo.org/search.html?q=flask)
+- [PyVideo](https://pyvideo.org/search.html?q=flask)  
 - [Practical Flask Web Development Tutorials](https://www.youtube.com/playlist?list=PLQVvvaa0QuDc_owjTbIY4rbgXOFkUYOUB)
 
-## Built with Flask
+## Flask 实例项目
 
-- [zmusic-ng](https://git.zx2c4.com/zmusic-ng/) - ZX2C4 Music provides a web interface for playing and downloading music files using metadata.
-- [GuitarFan](https://github.com/lowrain/GuitarFan) - guitar tab
-- [June](https://github.com/pythoncn/june) - ~~python-china.org~~
-- [Zerqu](https://github.com/lepture/zerqu) - ZERQU is a content-focused API-based platform. eg: [Python-China](https://python-china.org)
-- [motiky](https://github.com/notedit/motiky)
-- [missing](https://github.com/notedit/missing) - a list service called missing
-- [thenewsmeme.com](https://github.com/danjac/newsmeme)
-- [overholt](https://github.com/mattupstate/overholt) - Example Flask application illustrating common practices
-- [pypress](https://github.com/laoqiu/pypress) - flask team blog
-- [thepast.me](https://github.com/laiwei/thepast)
-- [redispapa](https://github.com/no13bus/redispapa) - another redis monitor by using flask, angular, socket.io
-- [flaskblog](https://github.com/defshine/flaskblog) - a simple blog system based on flask
-- [cleanblog](https://github.com/defshine/cleanblog) - a clean blog system based on flask and mongoengine
-- [Quokka CMS](https://github.com/rochacbruno/quokka) - CMS made with Flask and MongoDB
-- [chat](https://github.com/lzyy/chat) - a live chat built with python (flask + gevent + apscheduler) + redis
-- [chatapp](https://github.com/vinceprignano/chatapp) - Flask and Angular.js Chat Application using Socket.io
-- [Frozen-Flask](https://github.com/Frozen-Flask/Frozen-Flask) - Freezes a Flask application into a set of static files
-- [mcflyin](https://github.com/wrobstory/mcflyin) - A small timeseries transformation API built on Flask and Pandas
-- [Skylines](https://github.com/skylines-project/skylines) - Live tracking, flight database and competition framework
-- [airflow](https://github.com/apache/incubator-airflow) - Airflow is a system to programmatically author, schedule and monitor data pipelines.
-- [timesketch](https://github.com/google/timesketch) - Collaborative forensics timeline analysis
-- [changes](https://github.com/dropbox/changes) - A dashboard for your code. A build system.
-- [security_monkey](https://github.com/Netflix/security_monkey) - monitors policy changes and alerts on insecure configurations in an AWS account.
-- [securedrop](https://github.com/freedomofpress/securedrop)- an open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources.
-- [sync_engine](https://github.com/nylas/sync-engine) - IMAP/SMTP sync system with modern APIs
-- [cleansweep](https://github.com/AamAadmiParty/cleansweep) - Volunteer & Campaign Management System
-- [indico](https://github.com/indico/indico) - a general-purpose event management web-based solution. It includes a full-blown conference organization workflow as well as tools for meeting management and room booking. It provides as well integration with video-conferencing solutions.
-- [flaskbb](https://github.com/flaskbb/flaskbb) - A classic Forum Software in Python using Flask.
-- [PythonBuddy] (https://github.com/ethanchewy/PythonBuddy) - Online Python Editor With Live Syntax Checking and Execution
+- [zmusic-ng](https://git.zx2c4.com/zmusic-ng/) - 音乐播放与下载 Web 界面  
+- [GuitarFan](https://github.com/lowrain/GuitarFan) - 吉他谱  
+- [June](https://github.com/pythoncn/june) - Python 社区项目  
+- [Zerqu](https://github.com/lepture/zerqu) - 内容 API 平台  
+- [motiky](https://github.com/notedit/motiky)  
+- [missing](https://github.com/notedit/missing) - missing 列表服务  
+- [thenewsmeme.com](https://github.com/danjac/newsmeme)  
+- [overholt](https://github.com/mattupstate/overholt) - Flask 示例应用  
+- [pypress](https://github.com/laoqiu/pypress) - Flask 团队博客  
+- [thepast.me](https://github.com/laiwei/thepast)  
+- [redispapa](https://github.com/no13bus/redispapa) - Flask + Angular + Socket.IO Redis 监控  
+- [flaskblog](https://github.com/defshine/flaskblog) - 简单博客系统  
+- [cleanblog](https://github.com/defshine/cleanblog) - Flask + MongoEngine 的博客系统  
+- [Quokka CMS](https://github.com/rochacbruno/quokka) - Flask + MongoDB CMS  
+- [chat](https://github.com/lzyy/chat) - 实时聊天系统（Flask + Gevent + APScheduler + Redis）  
+- [chatapp](https://github.com/vinceprignano/chatapp) - Flask + Angular.js 聊天应用（Socket.IO）  
+- [Frozen-Flask](https://github.com/Frozen-Flask)
 
-## Boilerplate
-
-- [fbone](https://github.com/imwilsonxu/fbone)
-- [cookiecutter-flask](https://github.com/sloria/cookiecutter-flask)
-- [Flask-Foundation](https://github.com/JackStouffer/Flask-Foundation)
-- [flask-rest-template](https://github.com/alexandre/flask-rest-template)
-- [gae-init](https://gae-init.appspot.com) - Flask boilerplate running on Google App Engine
-- [Flask-AppBuilder](https://github.com/dpgaspar/Flask-AppBuilder) - Simple and rapid application builder framework, built on top of Flask. includes detailed security, auto form generation, google charts and much more
