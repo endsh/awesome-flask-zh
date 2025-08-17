@@ -20,7 +20,7 @@
   - [异常追踪](#异常追踪)
   - [链路追踪](#链路追踪)
   - [APM](#APM)
-  - [其他 SDK](#其他 SDK)
+  - [其他SDK](#其他SDK)
   - [前端](#前端)
   - [开发 (调试/测试/文档)](#开发 (调试/测试/文档))
   - [工具类 (Utils)](#工具类 (Utils))
@@ -128,7 +128,7 @@
 
 - [elastic-apm](https://github.com/elastic/apm-agent-python) - Elastic APM Python Agent
 
-## 其他 SDK
+## 其他SDK
 
 - [Flask-GoogleMaps](https://github.com/rochacbruno/Flask-GoogleMaps) - 在 Flask 模板中构建和嵌入 Google Maps  
 - [Flask-Gravatar](https://github.com/zzzsochi/Flask-Gravatar) - 在 Flask 中使用 Gravatar  
