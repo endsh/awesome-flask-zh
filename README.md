@@ -1,49 +1,48 @@
-# Awesome Flask [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Awesome Flask资源汇总（中文版） [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> A curated list of awesome Flask resources and plugins
-
+> Awesome Flask资源汇总
 - [Awesome Flask](#awesome-flask)
-  - [Framework](#framework)
-  - [Admin interface](#admin-interface)
-  - [Analytics](#analytics)
-  - [Authentication](#authentication)
-  - [Authorization](#authorization)
-  - [Database](#database)
-  - [Database Migrations](#database-migrations)
-  - [Session](#session)
-  - [Cache](#cache)
-  - [Data Validation](#data-validation)
-  - [Email](#email)
+  - [框架](#framework)
+  - [后台管理](#admin-interface)
+  - [分析统计](#analytics)
+  - [认证](#authentication)
+  - [授权](#authorization)
+  - [数据库](#database)
+  - [数据库迁移](#database-migrations)
+  - [会话](#session)
+  - [缓存](#cache)
+  - [数据校验](#data-validation)
+  - [邮箱](#email)
   - [i18n](#i18n)
-  - [Full-text searching](#full-text-searching)
-  - [Rate Limiting](#rate-limiting)
-  - [Task Queue](#task-queue)
-  - [Exception tracking](#exception-tracking)
-  - [Tracing](#tracing)
+  - [全文搜索](#full-text-searching)
+  - [限流](#rate-limiting)
+  - [任务队列](#task-queue)
+  - [异常追踪](#exception-tracking)
+  - [跟踪](#tracing)
   - [APM](#apm)
-  - [Other SDK](#other-sdk)
-  - [Frontend](#frontend)
-  - [Development (Debugging/Testing/Documentation)](#development-debuggingtestingdocumentation)
-  - [Utils](#utils)
-- [Resources](#resources)
-  - [Tutorials](#tutorials)
-  - [Courses](#courses)
-  - [Books](#books)
-  - [Slides](#slides)
-  - [Videos](#videos)
-  - [Built with Flask](#built-with-flask)
-  - [Boilerplate](#boilerplate)
+  - [其他  SDK](#other-sdk)
+  - [前端](#frontend)
+  - [开发 (调试/测试/文档)](#development-debuggingtestingdocumentation)
+  - [工具类](#utils)
+- [资源](#resources)
+  - [指南](#tutorials)
+  - [课程](#courses)
+  - [书本](#books)
+  - 幻灯片](#slides)
+  - [视频](#videos)
+  - [基于 Flask 的项目](#built-with-flask)
+  - [样板](#boilerplate)
 
-## Framework
+## 框架
 
-- [Connexion](https://github.com/zalando/connexion) - Swagger/OpenAPI First framework for Python on top of Flask with automatic endpoint validation and OAuth2 support
-- [Flask-MongoRest](https://github.com/closeio/flask-mongorest) - Restful API framework wrapped around MongoEngine
-- [Eve](https://github.com/pyeve/eve) - REST API framework powered by Flask, MongoDB and good intentions
-- [Flask-Restless](https://github.com/jfinkels/flask-restless) - A Flask extension for creating simple ReSTful APIs from SQLAlchemy models
-- [Flask-RESTful](https://github.com/flask-restful/flask-restful) - Simple framework for creating REST APIs
-- [Flask-RestPlus](https://github.com/noirbizarre/flask-restplus) - syntaxic sugar, helpers and automatically generated Swagger documentation.
-- [Flask-Potion](https://github.com/biosustain/potion) - RESTful API framework for Flask and SQLAlchemy
-- [Zappa](https://github.com/Miserlou/Zappa) - Build and deploy server-less Flask applications on AWS Lambda and API Gateway
+- [Connexion](https://github.com/zalando/connexion) - 基于 Flask 的 Python Swagger/OpenAPI 优先框架，支持自动端点验证和 OAuth2。
+- [Flask-MongoRest](https://github.com/closeio/flask-mongorest) - 基于 MongoEngine 的 Restful API 框架
+- [Eve](https://github.com/pyeve/eve) - 使用 Flask 和 MongoDB 构建的 REST API 框架，带有良好设计理念
+- [Flask-Restless](https://github.com/jfinkels/flask-restless) - Flask 扩展，用于从 SQLAlchemy 模型快速创建简单的 RESTful API
+- [Flask-RESTful](https://github.com/flask-restful/flask-restful) - 用于创建 REST API 的简易框架
+- [Flask-RestPlus](https://github.com/noirbizarre/flask-restplus) - 提供语法糖、辅助工具，并可自动生成 Swagger 文档
+- [Flask-Potion](https://github.com/biosustain/potion) - 基于 Flask 和 SQLAlchemy 的 RESTful API 框架
+- [Zappa](https://github.com/Miserlou/Zappa) - 在 AWS Lambda 和 API Gateway 上构建和部署无服务器 Flask 应用
 
 ## Admin interface
 
