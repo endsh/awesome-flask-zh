@@ -227,5 +227,25 @@
 - [Quokka CMS](https://github.com/rochacbruno/quokka) - Flask + MongoDB CMS  
 - [chat](https://github.com/lzyy/chat) - 实时聊天系统（Flask + Gevent + APScheduler + Redis）  
 - [chatapp](https://github.com/vinceprignano/chatapp) - Flask + Angular.js 聊天应用（Socket.IO）  
-- [Frozen-Flask](https://github.com/Frozen-Flask)
+- [Frozen-Flask](https://github.com/Frozen-Flask/Frozen-Flask) - 将 Flask 应用冻结为静态文件  
+- [mcflyin](https://github.com/wrobstory/mcflyin) - 基于 Flask 和 Pandas 的小型时间序列 API  
+- [Skylines](https://github.com/skylines-project/skylines) - 实时跟踪、航班数据库及竞赛框架  
+- [airflow](https://github.com/apache/incubator-airflow) - 数据管道的编程化创建、调度与监控系统  
+- [timesketch](https://github.com/google/timesketch) - 协作式取证时间线分析工具  
+- [changes](https://github.com/dropbox/changes) - 代码仪表板与构建系统  
+- [security_monkey](https://github.com/Netflix/security_monkey) - 监控 AWS 配置变更并警告不安全设置  
+- [securedrop](https://github.com/freedomofpress/securedrop) - 开源匿名举报系统，便于媒体安全接收文件  
+- [sync_engine](https://github.com/nylas/sync-engine) - IMAP/SMTP 同步系统，带现代 API  
+- [cleansweep](https://github.com/AamAadmiParty/cleansweep) - 志愿者与活动管理系统  
+- [indico](https://github.com/indico/indico) - 通用事件管理 Web 解决方案，包括会议管理、视频会议集成  
+- [flaskbb](https://github.com/flaskbb/flaskbb) - 基于 Flask 的经典论坛软件  
+- [PythonBuddy](https://github.com/ethanchewy/PythonBuddy) - 在线 Python 编辑器，支持实时语法检查与执行
 
+## 模板/脚手架 (Boilerplate)
+
+- [fbone](https://github.com/imwilsonxu/fbone)  
+- [cookiecutter-flask](https://github.com/sloria/cookiecutter-flask)  
+- [Flask-Foundation](https://github.com/JackStouffer/Flask-Foundation)  
+- [flask-rest-template](https://github.com/alexandre/flask-rest-template)  
+- [gae-init](https://gae-init.appspot.com) - 在 Google App Engine 上运行的 Flask 模板  
+- [Flask-AppBuilder](https://github.com/dpgaspar/Flask-AppBuilder) - 简单快速的应用构建框架，提供安全、表单生成、Google Charts 等功能
