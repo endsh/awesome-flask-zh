@@ -28,7 +28,7 @@
   - [指南](#tutorials)
   - [课程](#courses)
   - [书本](#books)
-  - 幻灯片](#slides)
+  - [幻灯片](#slides)
   - [视频](#videos)
   - [基于 Flask 的项目](#built-with-flask)
   - [样板](#boilerplate)
